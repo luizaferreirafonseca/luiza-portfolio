@@ -12,5 +12,16 @@ justify-content: space-around;
 }
 
 .container h1{
-    font-size: 1.1rem;
+    font-size: 1.0rem;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+.icons i{
+    color: white;
+    font-size: 1.0rem;
+
 }
