@@ -1,0 +1,34 @@
+<div id="navbar"> 
+    <div class="navbar-container">
+        <h3 class="logo">LF.</h3>
+        <ul class="navbar-items" *ngIf="!showMenu">
+            <li class="navbar-item" ><i class="bi bi-house-heart-fill"></i>
+                Home
+            </li>
+            <li class="navbar-item" ><i class="bi bi-person"></i>Sobre mim</li>
+            <li class="navbar-item" ><i class="bi bi-cast"></i>Projetos</li>
+            <li class="navbar-item" ><i class="bi bi-info-circle"></i>Contato</li>
+            
+        </ul>
+    
+        <button id="navbar-mobiles-desktops" (click)="toggleMenu()">
+            <div class="navbar-mobiles-desktops-line"></div>
+            <div class="navbar-mobiles-desktops-line"></div>
+            <div class="navbar-mobiles-desktops-line"></div>
+        </button>
+
+        <nav id="navbar-mobiles-desktops-content" *ngIf="showMenu" [ngStyle]=" showMenu ? {'right': '0', 'opacity':'1'} : {'right': '-80%', 'opacity': '0.5'} ">
+            <button (click)="toggleMenu()" class="close-btn">X</button>
+            <ul>
+                <li class="navbar-item" >Home</li>
+                <li class="navbar-item">Sobre mim</li>
+                <li class="navbar-item" >Projetos</li>
+                <li class="navbar-item" >Contato</li>
+                
+            </ul>
+            <div class="logo-2">
+                <h3 class="logo-2">LF.</h3>
+            </div>
+        </nav>
+    </div>
+</div>
