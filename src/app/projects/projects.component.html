@@ -1,4 +1,31 @@
 <div class="total-content">
     <app-header></app-header>
     
+    <section class="section-one">
+        <div class="text">
+            <h3>Meus <strong class="projects-word">projetos</strong> recentes</h3>
+            <p>Aqui você pode conferir projetos que trabalhei recentemente.</p>
+        </div>
+
+        <div class="projects">
+            <div class="card" *ngFor="let card of cards">
+                <div class="image-top">
+                    <img [src]="card.imageSrc">
+                </div>
+                <div class="text-content">
+                    <p>{{card.title}}</p>
+                    <p class="descript">{{card.description}}
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button>Code</button>
+                    <button>Deploy</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <app-footer></app-footer>
 </div>
