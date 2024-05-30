@@ -41,8 +41,10 @@ flex-direction: column;
 
 }
 
+
+
 .myimage{
-    width: 430px;
+    width: 320px;
     transition: transform 0.3s ease;
     
 }

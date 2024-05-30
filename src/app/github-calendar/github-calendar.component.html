@@ -1,0 +1,5 @@
+<div *ngIf="calendarData">
+    <div *ngFor="let day of calendarData">
+      {{ day.created_at }}: {{ day.type }}
+    </div>
+  </div>

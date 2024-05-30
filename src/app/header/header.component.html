@@ -2,12 +2,12 @@
     <div class="navbar-container">
         <h3 class="logo">LF.</h3>
         <ul class="navbar-items" *ngIf="!showMenu">
-            <li class="navbar-item" ><i class="bi bi-house-heart-fill"></i>
+            <li class="navbar-item" routerLink="/home"><i class="bi bi-house-heart-fill"></i>
                 Home
             </li>
-            <li class="navbar-item" ><i class="bi bi-person"></i>Sobre mim</li>
-            <li class="navbar-item" ><i class="bi bi-cast"></i>Projetos</li>
-            <li class="navbar-item" ><i class="bi bi-pencil-square"></i>Blogs</li>
+            <li class="navbar-item" routerLink="/about"><i class="bi bi-person"></i>Sobre mim</li>
+            <li class="navbar-item" routerLink="/projects"><i class="bi bi-cast"></i>Projetos</li>
+            <li class="navbar-item" (click)="blogClick()"><i class="bi bi-pencil-square"></i>Blogs</li>
             
         </ul>
     
